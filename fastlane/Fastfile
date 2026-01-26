@@ -103,7 +103,7 @@ platform :ios do
     )
 
     gym(
-      export_method: "ad-hoc",
+      export_method: "app-store",
       scheme: "LoopCaregiver",
       output_name: "LoopCaregiver.ipa",
       configuration: "Release",
