@@ -40,7 +40,7 @@ platform :ios do
     )
 
     previous_build_number = latest_testflight_build_number(
-      app_identifier: "com.#{TEAMID}.loopkit.LoopCaregiver.v2",
+      app_identifier: "com.#{TEAMID}.loopkit.LoopCaregiver",
       api_key: api_key,
     )
 
@@ -103,7 +103,7 @@ platform :ios do
     )
 
     gym(
-      export_method: "ad-hoc",
+      export_method: "app-store",
       scheme: "LoopCaregiver",
       output_name: "LoopCaregiver.ipa",
       configuration: "Release",
